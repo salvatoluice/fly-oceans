@@ -1,5 +1,6 @@
 .reset {
-  padding-top: 20rem;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
     height: 300px;
     width: 100%;
     display: flex;
@@ -13,6 +14,7 @@
     background-color: #0f3460;
     padding: 30px;
     border-radius: 8px;
+    
   }
   .reset__textBox {
     padding: 10px;

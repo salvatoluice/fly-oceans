@@ -1,25 +1,29 @@
 import React from "react"
+import { CiDeliveryTruck } from 'react-icons/ci'
+import { GrPaypal } from 'react-icons/gr'
+import { FcShop } from 'react-icons/fc'
+import { BsFillClockFill } from 'react-icons/bs'
 import "./wrapper.css"
 
 const Wrapper = () => {
   const data = [
     {
-      cover: <i class='fa-solid fa-truck-fast'></i>,
+      cover: <CiDeliveryTruck />,
       title: "Worldwide Delivery",
       decs: "We offer competitive prices on our 100 million plus product any range.",
     },
     {
-      cover: <i class='fa-solid fa-id-card'></i>,
+      cover: <GrPaypal />,
       title: "Safe Payment",
       decs: "We offer competitive prices on our 100 million plus product any range.",
     },
     {
-      cover: <i class='fa-solid fa-shield'></i>,
+      cover: <FcShop />,
       title: "Shop With Confidence ",
       decs: "We offer competitive prices on our 100 million plus product any range.",
     },
     {
-      cover: <i class='fa-solid fa-headset'></i>,
+      cover: <BsFillClockFill />,
       title: "24/7 Support ",
       decs: "We offer competitive prices on our 100 million plus product any range.",
     },

@@ -52,6 +52,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <p>&copy;2023. Salvato Luis All Rights Reserved</p>
       </footer>
     </>
   )

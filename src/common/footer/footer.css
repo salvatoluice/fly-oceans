@@ -3,6 +3,9 @@ footer {
     padding: 100px 0;
     color: #fff;
   }
+  footer p {
+    text-align: center;
+  }
   footer h1 {
     margin-bottom: 30px;
     color: #e94560;

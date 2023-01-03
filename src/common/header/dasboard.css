@@ -1,5 +1,6 @@
 .dashboard {
     padding-top: 25rem;
+    padding-bottom: 25rem;
     height: 300px;
     width: 100%;
     display: flex;

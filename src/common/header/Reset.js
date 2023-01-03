@@ -15,6 +15,7 @@ function Reset() {
   return (
     <div className="reset">
       <div className="reset__container">
+      <h1 style={{color: 'red'}}>Fly-Oceans</h1>
         <input
           type="text"
           className="reset__textBox"
