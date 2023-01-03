@@ -1,11 +1,15 @@
 import './App.css';
 import Header from './common/header/Header';
+import Login from '../src/common/header/Login'
+import Register from '../src/common/header/Register'
+import Reset from '../src/common/header/Reset'
 import { Routes, Route } from 'react-router-dom';
 import Sdata from "./components/shops/Sdata"
 import Data from "./components/Data"
 import { useState } from 'react';
 import Pages from './pages/Pages';
 import Cart from './common/cart/Cart';
+import Dashboard from './common/header/Dashboard';
 
 
 function App() {
@@ -47,6 +51,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems}/>}   />
         <Route path='/cart' element={<Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} removeFromCart={removeFromCart}/>}  />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/reset' element={<Reset />} />
+        <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
       
     </div>

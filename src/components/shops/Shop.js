@@ -20,7 +20,7 @@ const Shop = ({ addToCart, shopItems }) => {
                 <i className='fa-solid fa-caret-right'></i>
               </div>
             </div>
-            <div className='product-content  grid1'>
+            <div className='product-content main-cont'>
               <ShopCart addToCart={addToCart} shopItems={shopItems} />
             </div>
           </div>

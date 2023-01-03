@@ -58,3 +58,13 @@
     box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
   }
   
+
+  .card {
+    height: 400px !important;
+    width: 250px;
+  }
+  .main-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }

@@ -26,7 +26,7 @@ const Search = ({ CartItem }) => {
           
           <div className='icon f_flex width'>
             <div className='cart'>
-              <Link to='/cart'>
+              <Link to='/cart' >
                 <BsCartCheckFill size={40}/>
                 <span>{CartItem.length}</span>
               </Link>
