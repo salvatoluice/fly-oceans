@@ -2,3 +2,18 @@
     background: #f6f9fc;
     padding: 50px 0;
   }  
+
+  .button {
+    width: 120px;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+  }  
+  
+  .button:hover {
+    background: red;
+    color: #fff;
+  }

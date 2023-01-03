@@ -14,7 +14,7 @@ const TopCate = () => {
             </div>
             <div className='heading-right row '>
               <span>View all</span>
-              <i className='fa-solid fa-caret-right'></i>
+              {/* <i className='fa-solid fa-caret-right'></i> */}
             </div>
           </div>
           <TopCart />

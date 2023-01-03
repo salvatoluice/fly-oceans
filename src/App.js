@@ -1,8 +1,6 @@
 import './App.css';
 import Header from './common/header/Header';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/mainPage/Home';
-import FlashDeals from './components/flashdeals/FlashDeals';
 import Sdata from "./components/shops/Sdata"
 import Data from "./components/Data"
 import { useState } from 'react';
@@ -28,6 +26,10 @@ function App() {
     }
   }
 
+  const removeFromCart = (product) => {
+    setCartItem(CartItem.filter((item) => item.id !== product.id))
+  }
+
   const decreaseQty = (product) => {
     const productExit = CartItem.find((item) => item.id === product.id)
 
@@ -44,7 +46,7 @@ function App() {
       <Header CartItem={CartItem} />
       <Routes>
         <Route path='/' element={<Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems}/>}   />
-        <Route path='/cart' element={<Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>}  />
+        <Route path='/cart' element={<Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} removeFromCart={removeFromCart}/>}  />
       </Routes>
       
     </div>

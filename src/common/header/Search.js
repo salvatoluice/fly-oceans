@@ -1,6 +1,8 @@
 import React from "react"
 import logo from "../../components/assets/images/logo.svg"
 import { Link } from "react-router-dom"
+import { BsCartCheckFill } from "react-icons/bs"
+import Cart from "../../components/newArrivals/Cart"
 
 const Search = ({ CartItem }) => {
   window.addEventListener("scroll", function () {
@@ -14,20 +16,19 @@ const Search = ({ CartItem }) => {
         <div className='container c_flex'>
           <div className='logo width '>
             {/* <img src={logo} alt='' /> */}
-            <h1 style={{color: 'red', fontStyle: 'italic', paddingLeft: '-2rem'}}>Fly</h1>
+            <h1 style={{color: 'red', fontStyle: 'italic', paddingLeft: '-2rem'}}>Fly-Oceans</h1>
           </div>
 
           <div className='search-box f_flex'>
             <i className='fa fa-search'></i>
             <input type='text' placeholder='Search...' />
           </div>
-
+          
           <div className='icon f_flex width'>
-            <i className='fa fa-user icon-circle'></i>
             <div className='cart'>
               <Link to='/cart'>
-                <i className='fa fa-shopping-bag icon-circle'></i>
-                <span>{CartItem.length === 0 ? "" : CartItem.length}</span>
+                <BsCartCheckFill size={40}/>
+                <span>{CartItem.length}</span>
               </Link>
             </div>
           </div>

@@ -12,7 +12,7 @@ const Head = () => {
             <label>fly-oceans@gmail.com</label>
           </div>
           <div className='right row RText'>
-            <label>FAQ"s</label>
+            <label>FAQs</label>
             <label>Get Help</label>
             <span>🏳️‍⚧️</span>
             <label>EN</label>

@@ -2,13 +2,16 @@ import React, { useState } from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { AiFillHeart, AiFillStar } from 'react-icons/ai'
+import { BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs'
+import './flash.css'
 
 const SampleNextArrow = (props) => {
   const { onClick } = props
   return (
     <div className='control-btn' onClick={onClick}>
       <button className='next'>
-        <i className='fa fa-long-arrow-alt-right'></i>
+        <BsArrowRightShort color="#fff" size={40} />
       </button>
     </div>
   )
@@ -18,7 +21,7 @@ const SamplePrevArrow = (props) => {
   return (
     <div className='control-btn' onClick={onClick}>
       <button className='prev'>
-        <i className='fa fa-long-arrow-alt-left'></i>
+        <BsArrowLeftShort color="#fff" size={40}/>
       </button>
     </div>
   )
@@ -50,26 +53,24 @@ const FlashCard = ({ productItems, addToCart }) => {
                   <img src={productItems.cover} alt='' />
                   <div className='product-like'>
                     <label>{count}</label> <br />
-                    <i className='fa-regular fa-heart' onClick={increment}></i>
+                    <AiFillHeart size={30} color='#fff' style={{cursor: 'pointer'}} onClick={increment} />
                   </div>
                 </div>
                 <div className='product-details'>
                   <h3>{productItems.name}</h3>
                   <div className='rate'>
-                    <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
+                    <AiFillStar color="yellow"/>
+                    <AiFillStar color="yellow"/>
+                    <AiFillStar color="yellow"/>
+                    <AiFillStar color="yellow"/>
+                    <AiFillStar color="yellow"/>
+                    
                   </div>
                   <div className='price'>
-                    <h4>${productItems.price}.00 </h4>
-                    {/* step : 3  
-                     if hami le button ma click garryo bahne 
-                    */}
-                    <button onClick={() => addToCart(productItems)}>
-                      <i className='fa fa-plus'></i>
-                    </button>
+                    <h4>Ksh. {productItems.price}.00 </h4>
+                    <p className="button" onClick={() => addToCart(productItems)}>
+                      Add to Cart
+                    </p>
                   </div>
                 </div>
               </div>

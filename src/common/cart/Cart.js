@@ -1,21 +1,20 @@
 import React from "react"
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+import { FaTimes } from 'react-icons/fa'
+import { Link } from "react-router-dom"
 import "./cart.css"
 
-const Cart = ({ CartItem, addToCart, decreaseQty }) => {
-  // Stpe: 7   calucate total of items
+const Cart = ({ CartItem, addToCart, decreaseQty, removeFromCart }) => {
   const totalPrice = CartItem.reduce((price, item) => price + item.qty * item.price, 0)
 
-  // prodcut qty total
   return (
     <>
       <section className='cart-items'>
         <div className='container d_flex'>
-          {/* if hamro cart ma kunai pani item xaina bhane no diplay */}
 
           <div className='cart-details'>
-            {CartItem.length === 0 && <h1 className='no-items product'>No Items are add in Cart</h1>}
+            {CartItem.length === 0 && <h1 className='no-items product'>Your Cart is Empty! Shop Something! <br /> <Link to='/'>Go to Home</Link> </h1>}
 
-            {/* yasma hami le cart item lai display garaaxa */}
             {CartItem.map((item) => {
               const productQty = item.price * item.qty
 
@@ -33,19 +32,17 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
                   </div>
                   <div className='cart-items-function'>
                     <div className='removeCart'>
-                      <button className='removeCart'>
-                        <i className='fa-solid fa-xmark'></i>
+                      <button style={{cursor: 'pointer'}} className='removeCart' onClick={() => removeFromCart(item)}>
+                        <FaTimes />
                       </button>
                     </div>
-                    {/* stpe: 5 
-                    product ko qty lai inc ra des garne
-                    */}
+
                     <div className='cartControl d_flex'>
-                      <button className='incCart' onClick={() => addToCart(item)}>
-                        <i className='fa-solid fa-plus'></i>
+                      <button style={{cursor: 'pointer'}}  className='incCart' onClick={() => addToCart(item)}>
+                        <AiOutlinePlus />
                       </button>
-                      <button className='desCart' onClick={() => decreaseQty(item)}>
-                        <i className='fa-solid fa-minus'></i>
+                      <button style={{cursor: 'pointer'}} className='desCart' onClick={() => decreaseQty(item)}>
+                        <AiOutlineMinus />
                       </button>
                     </div>
                   </div>
@@ -57,9 +54,9 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
           </div>
 
           <div className='cart-total product'>
-            <h2>Cart Summary</h2>
+            <h2>Your Cart</h2>
             <div className=' d_flex'>
-              <h4>Total Price :</h4>
+              <h4>Total Amount :</h4>
               <h3>${totalPrice}.00</h3>
             </div>
           </div>

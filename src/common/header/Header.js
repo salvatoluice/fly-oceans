@@ -6,11 +6,11 @@ import Navbar from "./Navbar"
 
 const Header = ({ CartItem }) => {
   return (
-    <>
+    <div style={{position: 'fixed', width: '100%', zIndex: 999  }}>
       <Head />
       <Search CartItem={CartItem} />
       <Navbar />
-    </>
+    </div>
   )
 }
 
