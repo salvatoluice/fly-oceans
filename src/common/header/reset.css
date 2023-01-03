@@ -27,6 +27,7 @@
     border: none;
     color: white;
     background-color: red;
+    cursor: pointer;
   }
   .reset__btn:hover {
     color: red;

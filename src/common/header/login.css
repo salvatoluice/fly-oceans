@@ -28,6 +28,7 @@
     border: none;
     color: white;
     background-color: red;
+    cursor: pointer;
   }
   .login__google {
     background-color: #000;

@@ -18,6 +18,7 @@
     text-align: center;
     background-color: #0f3460;
     padding: 30px;
+    border-radius: 8px;
   }
   .dashboard__btn {
     padding: 10px;
@@ -27,6 +28,7 @@
     color: white;
     border-radius: 6px;
     background-color: red;
+    cursor: pointer;
   }
   .dashboard div {
     margin-top: 7px;
