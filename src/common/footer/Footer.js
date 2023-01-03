@@ -1,6 +1,4 @@
 import React from "react"
-import {FaGooglePlay} from 'react-icons/fa'
-import { BsApple } from 'react-icons/bs'
 import "./footer.css"
 
 const Footer = () => {
@@ -13,11 +11,10 @@ const Footer = () => {
             <p>We offer competitive prices on our 100 million plus product any range. 24hr customer service!</p>
             <div className='icon d_flex'>
               <div className='img d_flex'>
-                <FaGooglePlay />
+                
                 <span>Google Play</span>
               </div>
               <div className='img d_flex'>
-                <BsApple />
                 <span>App Store</span>
               </div>
             </div>
