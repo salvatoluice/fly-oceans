@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Search = ({ CartItem }) => {
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search")
-    search.classList.toggle("active", window.scrollY > 100)
+    // search.classList.toggle("active", window.scrollY > 100)
   })
 
   return (
@@ -27,7 +27,7 @@ const Search = ({ CartItem }) => {
             <div className='cart'>
               <Link to='/cart'>
                 <i className='fa fa-shopping-bag icon-circle'></i>
-                {/* <span>{CartItem.length === 0 ? "" : CartItem.length}</span> */}
+                <span>{CartItem.length === 0 ? "" : CartItem.length}</span>
               </Link>
             </div>
           </div>
