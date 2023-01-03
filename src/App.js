@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './common/header/Header';
+import Footer from './common/footer/Footer';
 import Login from '../src/common/header/Login'
 import Register from '../src/common/header/Register'
 import Reset from '../src/common/header/Reset'
@@ -56,6 +57,7 @@ function App() {
         <Route path='/reset' element={<Reset />} />
         <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
+      <Footer />
       
     </div>
   );

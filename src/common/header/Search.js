@@ -16,7 +16,7 @@ const Search = ({ CartItem }) => {
         <div className='container c_flex'>
           <div className='logo width '>
             {/* <img src={logo} alt='' /> */}
-            <h1 style={{color: 'red', fontStyle: 'italic', paddingLeft: '-2rem'}}>Fly-Oceans</h1>
+            <h1><Link style={{color: 'red', fontStyle: 'italic', paddingLeft: '-2rem'}} to='/'>Fly-Oceans</Link></h1>
           </div>
 
           <div className='search-box f_flex'>

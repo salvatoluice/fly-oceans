@@ -35,3 +35,8 @@ footer {
     opacity: 0.5;
   }
   
+  footer li:hover {
+    color: #e94560;
+    font-weight: bold;
+    cursor: pointer;
+  }

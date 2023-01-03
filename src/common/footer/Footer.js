@@ -1,4 +1,6 @@
 import React from "react"
+import {FaGooglePlay} from 'react-icons/fa'
+import { BsApple } from 'react-icons/bs'
 import "./footer.css"
 
 const Footer = () => {
@@ -7,15 +9,15 @@ const Footer = () => {
       <footer>
         <div className='container grid2'>
           <div className='box'>
-            <h1>Bonik</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
+            <h1>Fly-Oceans</h1>
+            <p>We offer competitive prices on our 100 million plus product any range. 24hr customer service!</p>
             <div className='icon d_flex'>
               <div className='img d_flex'>
-                <i class='fa-brands fa-google-play'></i>
+                <FaGooglePlay />
                 <span>Google Play</span>
               </div>
               <div className='img d_flex'>
-                <i class='fa-brands fa-app-store-ios'></i>
+                <BsApple />
                 <span>App Store</span>
               </div>
             </div>
@@ -44,9 +46,9 @@ const Footer = () => {
           <div className='box'>
             <h2>Contact Us</h2>
             <ul>
-              <li>70 Washington Square South, New York, NY 10012, United States </li>
-              <li>Email: uilib.help@gmail.com</li>
-              <li>Phone: +1 1123 456 780</li>
+              <li>70 Street, Ngong Lane Plaza, Ngong Rd, Nairobi Kenya</li>
+              <li>salvatoluice5@gmail.com</li>
+              <li>Phone: +254 113 794 219</li>
             </ul>
           </div>
         </div>
